@@ -1,4 +1,4 @@
-@extends('admin.layoutsAdmin.app')
+@extends('user.layoutsuser.app')
 @section('title', 'Konfirmasi Pesanan')
 @section('content')
     <div class="container">

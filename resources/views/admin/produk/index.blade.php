@@ -18,12 +18,10 @@
                                 <tr>
                                     <th>Nama Produk</th>
                                     <th>Harga Produk</th>
-                                    <th>Kategori Produk</th>
-                                    <th width=30>Action</th>
+                                    <th width=50>Action</th>
                                 </tr>
                             </thead>
                         </table>
-
                     </div>
                 </div>
             </div>
@@ -45,10 +43,6 @@
                     {
                         data: 'harga_produk',
                         name: 'harga_produk'
-                    },
-                    {
-                        data: 'uuid_kategori',
-                        name: 'uuid_kategori'
                     },
                     {
                         data: 'action',

@@ -32,7 +32,12 @@
                                 {{ 'Rp. ' . format_uang($produk->harga_produk) }}
                             </p>
                             {{ Form::open(['url' => '/keranjang']) }}
+                            @guest
+                            
+                            @else
                             {{ Form::hidden('email', Auth::user()->email , ['class' => 'btn btn-primary']) }}
+
+                            @endif
                             {{ Form::hidden('uuid_produk', $produk->uuid_produk, ['class' => 'btn btn-primary']) }}
                             {{ Form::submit('Masukkan Keranjang', ['class' => 'btn btn-primary']) }}
                             {{ Form::close() }}

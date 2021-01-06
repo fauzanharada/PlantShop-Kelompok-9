@@ -33,7 +33,7 @@ class PesanController extends Controller
         $pesan->uuid_pesan  = $uuid_pesan;
         $pesan->email       = $id;
         $pesan->uuid_konfirmasi =  '';
-        $pesan->kurir       = '';
+        $pesan->kurir       = null;
         $pesan->no_resi     = '';
         $pesan->save();
 
@@ -51,6 +51,10 @@ class PesanController extends Controller
         
         return redirect('/pesan')->with('success', 'Pesanan Berhasil Dibuat');
         
+    }
+
+    public function cara_bayar(){
+        return view('user.pesan.caraBayar');
     }
 
     /**

@@ -19,7 +19,7 @@
         <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Plant Shop BJM
+                    Bandarmasih Plant
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -38,10 +38,10 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="produk">Produk</a>
+                                <a class="nav-link" href="/produk">Produk</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="kategori">Kategori Produk</a>
+                                <a class="nav-link" href="/kategori">Kategori Produk</a>
                             </li>
                             @if (Route::has('login'))
                                 <li class="nav-item">
@@ -105,12 +105,28 @@
                     <div class="col-md-3">
                         <h4>ABOUT US</h4>
                         <hr>
-                        <p class="mt-2">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum magnam facere veniam quam
-                            praesentium ea autem nisi, eligendi quaerat iure quis cum sint quod a officia enim
-                            necessitatibus
-                            voluptate ipsa.
-                        </p>
+                        <table>
+                            <tr>
+                                <th colspan="2">
+                                    Kelompok 9
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>Fauzan Harada</td>
+                                <td>:</td>
+                                <td>1710131310013</td>
+                            </tr>
+                            <tr>
+                                <td>Muhammad Ramadani</td>
+                                <td>:</td>
+                                <td>1710131210011</td>
+                            </tr>
+                            <tr>
+                                <td>Renaldi Al Amin</td>
+                                <td>:</td>
+                                <td>1710131310037</td>
+                            </tr>
+                        </table>
                     </div>
                     <div class="col-md-6">
                     </div>
@@ -121,11 +137,11 @@
                         <br>
                         <i class="fas fa-home mr-2"></i> Banjarmasin, Kalimantan Selatan
                         <br>
-                        <i class="fas fa-envelope mr-2"></i> plantshop@gmail.com
+                        <i class="fas fa-envelope mr-2"></i> bandarmasin_plant@gmail.com
+                        {{-- <br> --}}
+                        {{-- <a class="text-white" href=""><i class="fab fa-facebook mr-2"></i> Plant Shop BJM</a> --}}
                         <br>
-                        <a class="text-white" href=""><i class="fab fa-facebook mr-2"></i> Plant Shop BJM</a>
-                        <br>
-                        <a class="text-white" href=""><i class="fab fa-instagram mr-2"></i>@plantshop_bjm</a>
+                        <a class="text-white" href="https://www.instagram.com/bandarmasihplant/" target="_blank"><i class="fab fa-instagram mr-2"></i>@bandarmasihplant</a>
 
 
                     </div>

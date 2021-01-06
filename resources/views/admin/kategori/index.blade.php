@@ -17,7 +17,7 @@
                             <thead>
                                 <tr>
                                     <th>Nama Kategori</th>
-                                    <th width=30>Action</th>
+                                    <th width=50>Action</th>
                                 </tr>
                             </thead>
                         </table>

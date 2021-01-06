@@ -1,5 +1,5 @@
 @extends('admin.layoutsAdmin.app')
-@section('title', 'Edit Kategori Tanaman')
+@section('title', 'Masukkan Resi')
 @section('content')
     <div class="container">
         <div class="row justify-content-center">

@@ -33,12 +33,21 @@
                                     </tr>
                                     <tr>
                                         <td class="align-top" width='150px'>Detail</td>
-                                        <td>:</td>
+                                        <td class="align-top">:</td>
                                         <td>{{ $produk->detail_produk }}</td>
                                     </tr>
                                 </table>
                                 <br>
-                                <a href="/produk/{{ $produk->uuid_produk }}/edit" class="btn btn-primary text-right">Masukkan Keranjang</a>
+                                {{ Form::open(['url' => '/keranjang']) }}
+                            @guest
+                            
+                            @else
+                            {{ Form::hidden('email', Auth::user()->email , ['class' => 'btn btn-primary']) }}
+
+                            @endif
+                            {{ Form::hidden('uuid_produk', $produk->uuid_produk, ['class' => 'btn btn-primary']) }}
+                            {{ Form::submit('Masukkan Keranjang', ['class' => 'btn btn-primary']) }}
+                            {{ Form::close() }}
                             </div>
                         </div>
                     </div>

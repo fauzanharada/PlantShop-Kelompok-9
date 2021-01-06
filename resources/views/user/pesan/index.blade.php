@@ -48,8 +48,7 @@
                         <div class="row">
                             <div class="col-md-12 text-center">
 
-                                {{-- <a href="/pesan/{{ Auth::user()->email }}"
-                                    class="btn btn-primary btn-lg">Buat Pesanan</a> --}}
+                                <a href="/cara_bayar" class="btn btn-primary btn-lg" target="_blank">Bantuan Pembayaran Klik Disini</a>
                             </div>
                         </div>
                     </div>

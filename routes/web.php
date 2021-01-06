@@ -42,10 +42,11 @@ Route::group(['namespace' => 'user'], function () {
     Route::get('produk', 'ProdukController@index');
     Route::get('produk/{id}', 'ProdukController@show');
     Route::get('produk/kategori/{id}', 'ProdukController@showByKategori');
+    Route::get('cara_bayar', 'PesanController@cara_bayar');
 
     Route::get('kategori', 'KategoriController@index');
 
-    Route::group(['middleware' => 'role:user'], function () {
+    Route::group(['middleware' => ['auth','role:user']], function () {
         Route::get('biodata/{id}', 'BiodataController@index');
         Route::get('biodata/{id}/edit', 'BiodataController@edit');
         Route::put('biodata/{id}', 'BiodataController@update');

@@ -16,7 +16,7 @@ class PesananController extends Controller
 
     public function json()
     {
-        return DataTables::of(Pesan::whereNotNull('uuid_konfirmasi')->whereNull('uuid_konfirmasi'))
+        return DataTables::of(Pesan::whereNotNull('uuid_konfirmasi')->whereNull('Kurir'))
             ->addColumn('action', function ($row) {
                 $action   = '<a href="/admin/pesanan/' . $row->uuid_pesan . '/resi" class="btn btn-sm btn-primary"  data-bs-toggle="tooltip"
                 data-bs-placement="top" title="Masukkan Resi"><i class="fas fa-check-circle"></i></a>|';

@@ -53,7 +53,7 @@
                             <tbody>
                                 <td>{{ $konfirmasi->atas_nama }}</td>
                                 <td>{{ $konfirmasi->bank }}</td>
-                                <td><img style="height:270px; object-fit:cover; object-position:center;"
+                                <td><img style="widht:270px; object-fit:cover; object-position:center;"
                                     src="{{ asset('storage/' . $konfirmasi->foto_bukti_pembayaran . '') }}" class="card-img-top"></td>
                             </tbody>
                         </table>

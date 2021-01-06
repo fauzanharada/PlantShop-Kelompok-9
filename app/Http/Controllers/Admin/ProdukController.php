@@ -13,8 +13,9 @@ class ProdukController extends Controller
 {
 
     public function json()
-    {
-        return DataTables::of(Produk::all())
+    {   
+        $row = Produk::with('hantu')->get();
+        return DataTables::of($row)
             ->addColumn('action', function ($row) {
                 $action   = '<a href="/admin/produk/' . $row->uuid_produk . '/edit" class="btn btn-sm btn-primary" ><i class="fas fa-pencil-alt"></i></a>';
                 $action  .= \Form::open(['url' => '/admin/produk/' . $row->uuid_produk, 'method' => 'delete', 'style' => 'float:right']);
